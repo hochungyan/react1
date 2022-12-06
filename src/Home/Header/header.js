@@ -1,3 +1,6 @@
+import {Link} from "react-router-dom";
+
+
 const Header = ()=>{
     return(
   
@@ -12,8 +15,17 @@ const Header = ()=>{
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <Link to="/">Home</Link>
+          
         </li>
+            <li class ="nav-item">
+          <Link to ="/contact"> Contact</Link>
+        </li>
+        <li class ="nav-item">
+          <Link to ="/about"> About</Link>
+        </li>
+
+
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
